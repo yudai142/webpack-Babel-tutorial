@@ -1,3 +1,12 @@
-import { test } from './component/test'; //拡張子は省略可能
+import { test } from './component/test';
 
-test();
+const keyName = 'hei';
+
+let params = {
+  foo: 'foooooo',
+  bar: 'baaaaa',
+  baz: 'zzzzzz',
+  [keyName]: 'moimoi'
+};
+
+test(params);

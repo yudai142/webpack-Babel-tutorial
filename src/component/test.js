@@ -1,5 +1,5 @@
-function test(){
-  console.log('Hello World!!');
+const test = ({ foo, bar, ...others }) => {
+  console.log(others);
 }
 
 export { test };
